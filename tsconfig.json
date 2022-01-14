@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 'esnext', 'es2016' 등등 javascript버젼 
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true, // js파일들 ts에서 import 해서 쓸 수 있는지 여부
+    "skipLibCheck": true, 
+    "esModuleInterop": true, // export default 없는 라이브러리도 * as 없이 사용가능, import * as React from 'react' -> import React from ~  
+    "allowSyntheticDefaultImports": true,
+    "strict": true, //strict 관련, noimplicit 어쩌구 관련 모드 전부 켜기
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext", // import 문법 어떤거 쓸건지 'commonjs', 'amd', 'es2015' 등
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx" // tsx 파일을 jsx로 어떻게 컴파일할 것인지 'preserve', 'react-native', 'react'
+  },
+  "include": [
+    "src"
+  ]
+}
